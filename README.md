@@ -1,3 +1,6 @@
+### Status
+[![Build Status](https://travis-ci.org/creative-berserkers/proxy.svg)](https://travis-ci.org/creative-berserkers/proxy)
+
 Simple JavaScript proxy function factory
 
 ```JavaScript
