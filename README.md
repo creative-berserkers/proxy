@@ -8,7 +8,7 @@ To import it into your project please input the following code:
 
 ```JavaScript
 var createProxyFunction = require('cb-proxy')
-
+//(...)
 var proxyFunction = createProxyFunction(originalFunction, nameIdentifier)
 ```
 ### Examples
@@ -17,14 +17,14 @@ This library is intended to be used with Socket.io or simillar library, here is 
 
 ```JavaScript
 
-var originalFunction = function(name, args, callback) {
+var callbackHandler = function(name, args, callback) {
     //do the call server request here eg:
     //client.emit(name, args, function(error, message){
     //    callback(error, message)
     //});
 }
 
-var proxyFunction = createProxyFunction( originalFunction, 'remote-function-name') //this name will be passed to callback as first argument
+var proxyFunction = createProxyFunction( callbackHandler, 'remote-function-name') //this name will be passed to callback as first argument
 
 var resultPromise = proxyFunction('my first argument', 'my second argument') //both arguments will be passed to callback
 
