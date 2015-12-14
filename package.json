@@ -1,0 +1,21 @@
+{
+  "name": "cb-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/createFoxRPC.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "author": "Odrinwhite",
+  "license": "WTFPL",
+  "devDependencies": {
+    "mocha": "2.3.4",
+    "ramda": "0.18.0"
+  },
+  "dependencies": {
+    "bluebird": "3.0.6"
+  }
+}
