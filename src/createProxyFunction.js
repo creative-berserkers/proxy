@@ -1,7 +1,5 @@
 'use strict'
 
-var Promise = require('bluebird');
-
 module.exports = function createProxyFunction(onCall, name) {
     return function() {
         return new Promise((resolve, reject) => {
