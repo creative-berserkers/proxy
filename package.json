@@ -1,13 +1,17 @@
 {
   "name": "cb-proxy",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/createFoxRPC.js",
+  "version": "1.1.0",
+  "description": "Simple proxy function factory for the use with libraries like Socket.io.",
+  "main": "src/createProxyFunction.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/creative-berserkers/proxy"
   },
   "author": "Odrinwhite",
   "license": "WTFPL",
